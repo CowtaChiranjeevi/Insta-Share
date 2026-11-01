@@ -1,0 +1,36 @@
+.failure-view-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px 16px;
+}
+
+.failure-view-image {
+  width: 220px;
+  max-width: 100%;
+}
+
+.failure-view-text {
+  font-size: 16px;
+  color: #262626;
+  margin: 20px 0;
+}
+
+.failure-view-button {
+  background-color: #4094ef;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .failure-view-image {
+    width: 300px;
+  }
+}

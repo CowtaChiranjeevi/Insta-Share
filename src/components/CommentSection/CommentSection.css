@@ -1,0 +1,20 @@
+.comments-list {
+  margin-top: 6px;
+}
+
+.comment-item {
+  margin-bottom: 4px;
+}
+
+.comment-text {
+  margin: 0;
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.4;
+}
+
+.comment-user-name {
+  font-weight: 700;
+  color: #262626;
+  margin-right: 6px;
+}

@@ -1,0 +1,43 @@
+.user-stories-container {
+  width: 100%;
+  padding: 8px 24px 16px;
+  margin-bottom: 8px;
+  background-color: #ffffff;
+  border: 1px solid #efefef;
+  border-radius: 8px;
+}
+
+.stories-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+}
+
+/* react-slick arrows */
+.user-stories-container .slick-prev,
+.user-stories-container .slick-next {
+  width: 24px;
+  height: 24px;
+  z-index: 1;
+}
+
+.user-stories-container .slick-prev {
+  left: -22px;
+}
+
+.user-stories-container .slick-next {
+  right: -22px;
+}
+
+.user-stories-container .slick-prev:before,
+.user-stories-container .slick-next:before {
+  color: #475569;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 576px) {
+  .user-stories-container {
+    padding: 8px 16px 12px;
+  }
+}
