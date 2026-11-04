@@ -1,6 +1,7 @@
+
 .profile-container {
   width: 100%;
-  max-width: 900px;
+  max-width: 950px;
   margin: 0 auto;
   padding: 24px 16px;
 }
@@ -30,7 +31,13 @@
 }
 
 .profile-picture-with-story {
-  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf);
+  background: linear-gradient(
+    45deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf
+  );
   cursor: pointer;
 }
 
@@ -97,15 +104,30 @@
 
 .profile-story-item {
   flex-shrink: 0;
+  list-style: none;
+}
+
+.profile-story-button {
+  width: 64px;
+  height: 64px;
+  padding: 2px;
+  border: 2px solid #dbdbdb;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.profile-story-button:hover {
+  transform: scale(1.05);
 }
 
 .profile-story-image {
-  width: 56px;
-  height: 56px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #dbdbdb;
-  padding: 2px;
+  display: block;
 }
 
 .profile-divider {
@@ -128,9 +150,39 @@
 
 .profile-posts {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 4px;
   margin-top: 16px;
+  padding: 0;
+}
+
+.profile-post-item {
+  list-style: none;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.profile-post-button {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: #f1f1f1;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.profile-post-button::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.2s ease;
+}
+
+.profile-post-button:hover::after {
+  background: rgba(0, 0, 0, 0.12);
 }
 
 .profile-post-image {
@@ -138,6 +190,11 @@
   aspect-ratio: 1 / 1;
   object-fit: cover;
   display: block;
+  transition: transform 0.25s ease;
+}
+
+.profile-post-button:hover .profile-post-image {
+  transform: scale(1.03);
 }
 
 .profile-no-posts {
@@ -190,7 +247,7 @@
     font-size: 14px;
   }
 
-  .profile-story-image {
+  .profile-story-button {
     width: 84px;
     height: 84px;
   }
