@@ -400,12 +400,21 @@ npm run preview   # preview the production build locally
 
 <br>
 
-The practice API accepts several test accounts. For example:
+The practice API accepts several test accounts. You can log in with any one of the following:
 
-```
-username: rahul
-password: rahul@2021
-```
+| Username | Password |
+| --- | --- |
+| `aakash` | `sky@007` |
+| `agastya` | `myth#789` |
+| `advika` | `world@5` |
+| `binita` | `modest*6` |
+| `chetan` | `vigor$life` |
+| `deepak` | `lightstar@1` |
+| `harshad` | `joy@85` |
+| `kapil` | `moon$008` |
+| `rahul` | `rahul@2021` |
+| `shravya` | `musical#stone` |
+| `saira` | `princess@9` |
 
 </details>
 
